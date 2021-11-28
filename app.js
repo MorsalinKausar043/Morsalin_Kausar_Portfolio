@@ -15,3 +15,9 @@ new Typed(".typing", {
     backSpeed: 60,
     loop : true
 })
+new Typed(".typing2", {
+    strings: ["Developer", "Designer", "Freelancer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop : true
+})

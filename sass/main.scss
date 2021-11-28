@@ -6,13 +6,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     width: 100vw;
     height: 100vh;
-    scroll-behavior: smooth;
 }
+
+// css variable
+
+$ubuntu : 'ubuntu', sans-serif;
 
 // loading page ---------------------------------->
 #loading{
@@ -213,4 +217,114 @@ body{
     }
 
 
+}
+
+
+// about site styling ----------------------------------------->
+
+.main_about{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .child_about{
+        width: 90%;
+        height: inherit;
+        padding: 50px 0px;
+
+        .about_title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: $ubuntu;
+            margin-top: 30px;
+
+            h2{
+                font-size: 40px;
+                font-weight: 500;
+                color: black;
+            }
+
+            .about_mini_title{
+                width: 250px;
+                margin: 20px 0 0 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                span:nth-child(1),span:nth-child(3){
+                    width: 60px;
+                    height: 3px;
+                    background: black;
+                    display: block;
+                    border-radius: 10px;
+                }
+
+                span:nth-child(2){
+                    color: rgb(218, 33, 33);
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .about_content{
+            width: 100%;
+            height: inherit;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 50px;
+            font-family: $ubuntu;
+
+            .left_content{
+                width: 50%;
+                height: 100%;
+                display: grid;
+                place-items: center;
+
+                figure{
+                    width: 90%;
+                    height: 90%;
+
+                    img{
+                        width: inherit;
+                        height: inherit;
+                        box-shadow: 2px 4px 4px 3px rgba($color: #4d4343, $alpha: 0.1);
+                        border-radius: 3px;
+                    }
+                }
+            }
+            .right_content{
+                width: 50%;
+
+                button{
+                    padding: 10px 15px;
+                    border: 2px solid rgb(218, 33, 33);
+                    background: rgb(218, 33, 33);
+                    border-radius: 5px;
+                    margin-top: 20px;
+                    transition: all .3s linear;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-family: $ubuntu;
+                        font-size: 20px;
+                        font-weight: 500;
+
+                        &:hover{
+                            color: rgb(218, 33, 33);
+                        }
+                    }
+                    &:hover{
+                        background: white;
+                    }
+                }
+            }
+        }
+    }
 }
