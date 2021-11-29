@@ -10,7 +10,8 @@ window.addEventListener("load", _ => loading.style.display = "none");
 window.addEventListener("scroll", _ => navigation.classList.toggle("active", window.scrollY > 0));
 
 // toggle_btn system add ----------------------->
-toggle_btn.addEventListener("click", _ => {
+
+toggle_btn.addEventListener("click", () => {
     toggle_btn.classList.toggle("active");
     mobile_nav.classList.toggle("active");
 });

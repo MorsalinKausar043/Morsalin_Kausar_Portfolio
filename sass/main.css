@@ -686,6 +686,181 @@ body {
   color: #da2121;
 }
 
+main {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+main .section_blog {
+  width: 50%;
+  height: 50%;
+  -webkit-box-shadow: 11px 11px 18px -7px rgba(0, 0, 0, 0.1), -11px -11px 18px -7px rgba(0, 0, 0, 0.1);
+          box-shadow: 11px 11px 18px -7px rgba(0, 0, 0, 0.1), -11px -11px 18px -7px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+main .section_blog h1 {
+  font-family: "ubuntu", sans-serif;
+}
+
+main .section_blog a {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+
+main .section_blog a i {
+  font-size: 30px;
+}
+
+.project_3_main {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.project_3_main .project_3_section {
+  width: 90%;
+  height: 90%;
+  -webkit-box-shadow: 11px 11px 18px -7px rgba(0, 0, 0, 0.1), -11px -11px 18px -7px rgba(0, 0, 0, 0.1);
+          box-shadow: 11px 11px 18px -7px rgba(0, 0, 0, 0.1), -11px -11px 18px -7px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(162, 216, 238, 0.1);
+}
+
+.project_3_main .project_3_section .project_3_left {
+  width: 50%;
+  height: 100%;
+}
+
+.project_3_main .project_3_section .project_3_left .project_3_up {
+  width: 100%;
+  height: 70%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.project_3_main .project_3_section .project_3_left .project_3_up img {
+  width: 90%;
+  height: 90%;
+  -webkit-box-shadow: 11px 11px 18px -7px rgba(0, 0, 0, 0.1), -11px -11px 18px -7px rgba(0, 0, 0, 0.1);
+          box-shadow: 11px 11px 18px -7px rgba(0, 0, 0, 0.1), -11px -11px 18px -7px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project_3_main .project_3_section .project_3_left .project_3_down {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0px;
+}
+
+.project_3_main .project_3_section .project_3_left .project_3_down img {
+  width: 30%;
+  height: 80%;
+  -webkit-box-shadow: 11px 11px 18px -7px rgba(0, 0, 0, 0.1), -11px -11px 18px -7px rgba(0, 0, 0, 0.1);
+          box-shadow: 11px 11px 18px -7px rgba(0, 0, 0, 0.1), -11px -11px 18px -7px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project_3_main .project_3_section .project_3_left .project_3_down img:hover {
+  border: 1px solid #2ec6f5;
+}
+
+.project_3_main .project_3_section .project_3_right {
+  width: 50%;
+  height: 100%;
+  padding: 50px;
+  font-family: "ubuntu", sans-serif;
+}
+
+.project_3_main .project_3_section .project_3_right .project_3_right_up {
+  width: 100%;
+  height: 70%;
+}
+
+.project_3_main .project_3_section .project_3_right .project_3_right_up h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.project_3_main .project_3_section .project_3_right .project_3_right_up p {
+  margin: 20px 0;
+}
+
+.project_3_main .project_3_section .project_3_right .project_3_right_up p small {
+  color: gray;
+}
+
+.project_3_main .project_3_section .project_3_right .project_3_right_up ul li {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.project_3_main .project_3_section .project_3_right .project_3_right_down {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.project_3_main .project_3_section .project_3_right .project_3_right_down #cancel_btn {
+  position: absolute;
+  bottom: 0px;
+}
+
+.project_3_main .project_3_section .project_3_right .project_3_right_down a {
+  text-decoration: none;
+  background: #da2121;
+  color: white;
+  border: 2px solid #da2121;
+  padding: 8px 10px;
+  border-radius: 5px;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.project_3_main .project_3_section .project_3_right .project_3_right_down a:hover {
+  background: transparent;
+  color: #da2121;
+}
+
 @media (max-width: 1080px) {
   .main_header .child_header #navigation {
     padding: 10px 50px;
@@ -1183,6 +1358,130 @@ body {
     font-size: 20px;
   }
   .main_footer .child_footer p span {
+    color: #da2121;
+  }
+  main .section_blog {
+    width: 80%;
+    height: 80%;
+  }
+  .project_3_main {
+    width: 100%;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .project_3_main .project_3_section {
+    width: 95%;
+    height: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px;
+    background: rgba(162, 216, 238, 0.1);
+  }
+  .project_3_main .project_3_section .project_3_left {
+    width: 90%;
+    height: 100%;
+  }
+  .project_3_main .project_3_section .project_3_left .project_3_up {
+    width: 100%;
+    height: 70%;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .project_3_main .project_3_section .project_3_left .project_3_up img {
+    width: 90%;
+    height: 90%;
+    -webkit-box-shadow: 11px 11px 18px -7px rgba(0, 0, 0, 0.1), -11px -11px 18px -7px rgba(0, 0, 0, 0.1);
+            box-shadow: 11px 11px 18px -7px rgba(0, 0, 0, 0.1), -11px -11px 18px -7px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .project_3_main .project_3_section .project_3_left .project_3_down {
+    width: 100%;
+    height: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5px 0px;
+  }
+  .project_3_main .project_3_section .project_3_left .project_3_down img {
+    width: 30%;
+    height: 80%;
+    -webkit-box-shadow: 11px 11px 18px -7px rgba(0, 0, 0, 0.1), -11px -11px 18px -7px rgba(0, 0, 0, 0.1);
+            box-shadow: 11px 11px 18px -7px rgba(0, 0, 0, 0.1), -11px -11px 18px -7px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .project_3_main .project_3_section .project_3_left .project_3_down img:hover {
+    border: 1px solid #2ec6f5;
+  }
+  .project_3_main .project_3_section .project_3_right {
+    width: 90%;
+    height: 100%;
+    padding: 50px;
+    font-family: "ubuntu", sans-serif;
+  }
+  .project_3_main .project_3_section .project_3_right .project_3_right_up {
+    width: 100%;
+    height: 70%;
+  }
+  .project_3_main .project_3_section .project_3_right .project_3_right_up h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .project_3_main .project_3_section .project_3_right .project_3_right_up p {
+    margin: 20px 0;
+  }
+  .project_3_main .project_3_section .project_3_right .project_3_right_up p small {
+    color: gray;
+  }
+  .project_3_main .project_3_section .project_3_right .project_3_right_up ul li {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .project_3_main .project_3_section .project_3_right .project_3_right_down {
+    width: 100%;
+    height: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .project_3_main .project_3_section .project_3_right .project_3_right_down #cancel_btn {
+    position: absolute;
+    bottom: 0px;
+  }
+  .project_3_main .project_3_section .project_3_right .project_3_right_down a {
+    text-decoration: none;
+    background: #da2121;
+    color: white;
+    border: 2px solid #da2121;
+    padding: 8px 10px;
+    border-radius: 5px;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+  }
+  .project_3_main .project_3_section .project_3_right .project_3_right_down a:hover {
+    background: transparent;
     color: #da2121;
   }
 }
