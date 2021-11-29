@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer-Morsalin</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/LRbX3MW/service3.png" type="image/x-icon">
     <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
     <!-- loading page ----------------------------> 
@@ -25,8 +28,9 @@
                             <li><a href="#about">About</a></li>
                             <li><a href="">Service</a></li>
                             <li><a href="">Skills</a></li>
-                            <li><a href="">Team</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="#project">Project</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <!-- <li><a class="resume_download" href="https://drive.google.com/file/d/1DEOBufxmpqMw7o2GrWKzTcBgxVez5Gqn/view?usp=sharing" target="_blank">Download resume</a></li> -->
                         </ul>
                     </div>
                     <div class="toggle_btn">
@@ -36,13 +40,13 @@
                     </div>
                 </nav>
                 <div class="header_content">
-                    <div class="header_mini_content">
+                    <div data-aos="fade-right" class="header_mini_content">
                         <h4>Hello, my name is</h4>
                         <h1>Morsalin Kausar</h1>
                         <p>And I'm a <span class="typing"></span></p>
                         <a href="https://www.linkedin.com/in/morsalin-kausar-2aa235215/" target="_blank">Hire Me</a>
                     </div>
-                    <div class="header_mini_content2">
+                    <div data-aos="fade-left" class="header_mini_content2">
                         <img src="https://i.ibb.co/DVkYGYM/IMG-3624-01-adobespark-adobespark.png" alt="main_header_img">
                     </div>
                 </div>
@@ -54,7 +58,7 @@
     <!-- About Part Start  -->
     <div id="about" class="main_about">
         <div class="child_about">
-            <div class="about_title">
+            <div data-aos="zoom-in-up" class="about_title">
                 <h2>About me</h2>
                 <div class="about_mini_title">
                     <span class="first_child"></span>
@@ -63,22 +67,146 @@
                 </div>
             </div>
             <div class="about_content">
-                <div class="left_content">
+                <div data-aos="fade-right" class="left_content">
                     <figure>
                         <img src="https://i.ibb.co/DKwDxT7/IMG-3624-01-1.jpg" alt="about_img_for_portfolio">
                     </figure>
                 </div>
-                <div class="right_content">
-                    <h2>I'm Morsalin Kausar And I'm a <span class="typing2"></span></h2>
+                <div data-aos="fade-left" class="right_content">
+                    <h2><span>I'm</span> Morsalin Kausar <br> And I'm a <span class="typing2"></span></h2>
                     <p>I'm passionate about all things Web Developing. I work hard. I care about writing clean code and I genuinely love to learn. I'm currently looking for the right opportunity to work In an environment that will help me progress into a Full Stack developer.</p>
-                    <button><a href="#">Download Resume</a></button>
+                    <button><a href="https://drive.google.com/file/d/1DEOBufxmpqMw7o2GrWKzTcBgxVez5Gqn/view?usp=sharing" target="_blank">Download Resume</a></button>
                 </div>
             </div>
         </div>
     </div>
     <!-- About Part End  -->
 
+    <!-- project part start  -->
+    <div id="project" class="main_project">
+        <div class="child_about">
+            <div data-aos="zoom-in-up" class="about_title">
+                <h2>My Project</h2>
+                <div class="about_mini_title">
+                    <span class="first_child"></span>
+                    <span class="second_child">what i maked</span>
+                    <span class="this_child"></span>
+                </div>
+            </div>
+            <div class="Project_conents">
+                <div data-aos="fade-right" class="project_content">
+                    <img class="Project_img" src="https://i.ibb.co/2vGY1cZ/screencapture-yokoo-bicycle-web-app-2021-11-29-01-39-51.png" alt="project_image">
+                    <div class="project_body">
+                        <h2>Yokoo-Bicycle</h2>
+                        <span>E-commerce Landing Page</span>
+                        <p>This is a bicycle shop. Sophisticated bicycles are available here. All bicycles are released from abroad.!</p>
+                        <div class="rating-btn">
+                            <div class="read_btn">
+                                <a href="#">Read More</a>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="project_content">
+                    <img class="Project_img" src="https://i.ibb.co/GkRr38W/screencapture-panda-online-shopping-netlify-app-2021-11-29-01-42-41.png" alt="project_image">
+                    <div class="project_body">
+                        <h2>Panda-shoe</h2>
+                        <span>E-commerce Landing Page</span>
+                        <p>This is a super shop. High quality products are available here. Which are sold at very affordable prices.</p>
+                        <div class="rating-btn">
+                            <div class="read_btn">
+                                <a href="#">Read More</a>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="project_content">
+                    <img class="Project_img" src="https://i.ibb.co/vhLksgF/screencapture-bootstrap-nike-netlify-app-2021-11-29-01-43-03.png" alt="project_image">
+                    <div class="project_body">
+                        <h2>Penguine Fashion</h2>
+                        <span>E-commerce Landing Page</span>
+                        <p>This is a shoe shop. High quality shoes are available here. These are of very expensive quality. Which lasts much longer.</p>
+                        <div class="rating-btn">
+                            <div class="read_btn">
+                                <a href="#">Read More</a>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- project part end  -->
+
+    <!-- contact part start  -->
+    <div id="contact" style="margin-top: 150px;" class="main_about">
+        <div class="child_about">
+            <div data-aos="zoom-in-up" class="about_title">
+                <h2>Contact me</h2>
+                <div class="about_mini_title">
+                    <span class="first_child"></span>
+                    <span class="second_child">get in touch</span>
+                    <span class="this_child"></span>
+                </div>
+                <div class="contact_body">
+                    <div class="contact_status">
+
+                    </div>
+                    <div class="contact_form">
+                        <form
+                            action="https://formspree.io/f/mnqwazav"
+                            method="POST"
+                            data-aos="fade-left"
+                        >
+                        <h2 class="form_title">Massage Me</h2>
+                            <label>
+                                <span>Your email:</span>
+                                <input type="email" name="_replyto">
+                            </label>
+                            <label>
+                                <span>Your message:</span>
+                                <textarea name="message"></textarea>
+                            </label>
+                            <!-- your other form fields go here -->
+                            <button type="submit">Send massage</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- contact part end  -->
+
     <!-- javascript link -->
     <script src="./app.js"></script>
+
+    <!-- aos animation  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
 </body>
 </html>
