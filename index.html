@@ -14,6 +14,20 @@
 <body>
     <!-- loading page ----------------------------> 
     <div id="loading"></div>
+
+    <!-- extra nav ===============>  -->
+        <nav data-aos="fade-up" id="mobile_nav" class="mobile_nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    <!-- extra nav ===============>  -->
+
     <!-- Hearder part start  -->
     <div id="home" class="main_header">
         <header class="child_header">
@@ -23,20 +37,20 @@
                         <p class="logo">Portfo<span class="logo_mini_part">lio.</span></p>
                     </div>
                     <div class="menu">
-                        <ul>
+                        <ul class="menu">
                             <li><a href="#">Home</a></li>
                             <li><a href="#about">About</a></li>
-                            <li><a href="">Service</a></li>
-                            <li><a href="">Skills</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Skills</a></li>
                             <li><a href="#project">Project</a></li>
                             <li><a href="#contact">Contact</a></li>
                             <!-- <li><a class="resume_download" href="https://drive.google.com/file/d/1DEOBufxmpqMw7o2GrWKzTcBgxVez5Gqn/view?usp=sharing" target="_blank">Download resume</a></li> -->
                         </ul>
                     </div>
-                    <div class="toggle_btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div id="toggle_btn">
+                        <span class="first_toggle"></span>
+                        <span class="second_toggle"></span>
+                        <span class="third_toggle"></span>
                     </div>
                 </nav>
                 <div class="header_content">
@@ -44,7 +58,7 @@
                         <h4>Hello, my name is</h4>
                         <h1>Morsalin Kausar</h1>
                         <p>And I'm a <span class="typing"></span></p>
-                        <a href="https://www.linkedin.com/in/morsalin-kausar-2aa235215/" target="_blank">Hire Me</a>
+                        <a href="https://drive.google.com/file/d/1DEOBufxmpqMw7o2GrWKzTcBgxVez5Gqn/view?usp=sharing" target="_blank">Download Resume</a>
                     </div>
                     <div data-aos="fade-left" class="header_mini_content2">
                         <img src="https://i.ibb.co/DVkYGYM/IMG-3624-01-adobespark-adobespark.png" alt="main_header_img">
@@ -69,13 +83,15 @@
             <div class="about_content">
                 <div data-aos="fade-right" class="left_content">
                     <figure>
-                        <img src="https://i.ibb.co/DKwDxT7/IMG-3624-01-1.jpg" alt="about_img_for_portfolio">
+                        <img src="./images/kausar (1).jpg" alt="about_img_for_portfolio">
                     </figure>
                 </div>
                 <div data-aos="fade-left" class="right_content">
                     <h2><span>I'm</span> Morsalin Kausar <br> And I'm a <span class="typing2"></span></h2>
                     <p>I'm passionate about all things Web Developing. I work hard. I care about writing clean code and I genuinely love to learn. I'm currently looking for the right opportunity to work In an environment that will help me progress into a Full Stack developer.</p>
-                    <button><a href="https://drive.google.com/file/d/1DEOBufxmpqMw7o2GrWKzTcBgxVez5Gqn/view?usp=sharing" target="_blank">Download Resume</a></button>
+                    <button>
+                        <a href="https://www.linkedin.com/in/morsalin-kausar-2aa235215/" target="_blank">Hire Me</a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -95,7 +111,7 @@
             </div>
             <div class="Project_conents">
                 <div data-aos="fade-right" class="project_content">
-                    <img class="Project_img" src="https://i.ibb.co/2vGY1cZ/screencapture-yokoo-bicycle-web-app-2021-11-29-01-39-51.png" alt="project_image">
+                    <img class="Project_img" src="./images/yokoo.png" alt="project_image">
                     <div class="project_body">
                         <h2>Yokoo-Bicycle</h2>
                         <span>E-commerce Landing Page</span>
@@ -115,7 +131,7 @@
                     </div>
                 </div>
                 <div data-aos="fade-up" class="project_content">
-                    <img class="Project_img" src="https://i.ibb.co/GkRr38W/screencapture-panda-online-shopping-netlify-app-2021-11-29-01-42-41.png" alt="project_image">
+                    <img class="Project_img" src="./images/nike.png" alt="project_image">
                     <div class="project_body">
                         <h2>Panda-shoe</h2>
                         <span>E-commerce Landing Page</span>
@@ -135,7 +151,7 @@
                     </div>
                 </div>
                 <div data-aos="fade-left" class="project_content">
-                    <img class="Project_img" src="https://i.ibb.co/vhLksgF/screencapture-bootstrap-nike-netlify-app-2021-11-29-01-43-03.png" alt="project_image">
+                    <img class="Project_img" src="./images/panguine.png" alt="project_image">
                     <div class="project_body">
                         <h2>Penguine Fashion</h2>
                         <span>E-commerce Landing Page</span>
@@ -170,9 +186,40 @@
                     <span class="this_child"></span>
                 </div>
                 <div class="contact_body">
-                    <div class="contact_status">
-
+                    <div data-aos="fade-right" class="contact_status">
+                        <div class="contact_status_main">
+                            <h2>Get in Touch</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, animi quo? Atque beatae nulla ut fuga quisquam maxime debitis est?</p>
+                            <div class="address_box">
+                                <div class="address_icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="address_body">
+                                    <h2>Name</h2>
+                                    <p>Morsalin Kausar</p>
+                                </div>
+                            </div>
+                            <div class="address_box">
+                                <div class="address_icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="address_body">
+                                    <h2>Location</h2>
+                                    <p>Jamalpur, Dhaka, Bangladesh</p>
+                                </div>
+                            </div>
+                            <div class="address_box">
+                                <div class="address_icon">
+                                    <i class="fas fa-envelope-open-text"></i>
+                                </div>
+                                <div class="address_body">
+                                    <h2>Email</h2>
+                                    <p>morsalinkausar043@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="contact_form">
                         <form
                             action="https://formspree.io/f/mnqwazav"
@@ -182,11 +229,11 @@
                         <h2 class="form_title">Massage Me</h2>
                             <label>
                                 <span>Your email:</span>
-                                <input type="email" name="_replyto">
+                                <input type="email" name="_replyto" required>
                             </label>
                             <label>
                                 <span>Your message:</span>
-                                <textarea name="message"></textarea>
+                                <textarea name="message" required></textarea>
                             </label>
                             <!-- your other form fields go here -->
                             <button type="submit">Send massage</button>
