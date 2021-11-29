@@ -392,6 +392,7 @@ body {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  margin-bottom: 100px;
 }
 
 .main_project .Project_conents .project_content {
@@ -464,6 +465,11 @@ body {
 .main_project .Project_conents .project_content .project_body .rating-btn .rating .fa-star {
   cursor: pointer;
   color: #e2a115;
+}
+
+.main_about.main_contact {
+  background: url("https://i.ibb.co/VHdBShT/cerulean-blue-curve-frame-template-53876-99029.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .contact_body {
@@ -559,5 +565,26 @@ body {
 .contact_body .contact_form form button:hover {
   color: #da2121;
   background: #fff;
+}
+
+.main_footer {
+  width: 100%;
+  height: auto;
+}
+
+.main_footer .child_footer {
+  background: black;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.main_footer .child_footer p {
+  font-family: "ubuntu", sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+
+.main_footer .child_footer p span {
+  color: #da2121;
 }
 /*# sourceMappingURL=main.css.map */
