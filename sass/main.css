@@ -439,6 +439,10 @@ body {
   color: #df1d37;
 }
 
+.main_project {
+  margin: 50px 0;
+}
+
 .main_project .Project_conents {
   padding: 50px 0px;
   display: -ms-grid;
