@@ -74,7 +74,7 @@ body {
 
 .mobile_nav.active {
   display: block;
-  background: #36cee9;
+  background: #27c29b;
   position: fixed;
   bottom: 0px;
 }
