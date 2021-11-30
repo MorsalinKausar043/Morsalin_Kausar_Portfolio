@@ -294,7 +294,7 @@ body {
 
 .main_about, .main_project {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,6 +445,142 @@ body {
 .main_about .child_about .about_content .right_content button:hover, .main_project .child_about .about_content .right_content button:hover {
   background: white;
   color: #df1d37;
+}
+
+.main_services {
+  width: 100%;
+  height: 70%;
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.main_services .child_service .service_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "ubuntu", sans-serif;
+}
+
+.main_services .child_service .service_title h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+
+.main_services .child_service .service_title .about_mini_title {
+  width: 250px;
+  margin: 20px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_services .child_service .service_title .about_mini_title span:nth-child(1), .main_services .child_service .service_title .about_mini_title span:nth-child(3) {
+  width: 40px;
+  height: 3px;
+  background: black;
+  display: block;
+  border-radius: 10px;
+}
+
+.main_services .child_service .service_title .about_mini_title span:nth-child(2) {
+  color: #da2121;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main_services .child_service .service_contents {
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  padding: 0px 150px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.main_services .child_service .service_contents .service_content {
+  width: auto;
+  height: auto;
+  text-align: center;
+  -webkit-box-shadow: 3px 6px 26px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 6px 26px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 30px 20px;
+  background: #1686f0;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.main_services .child_service .service_contents .service_content p i {
+  font-size: 40px;
+  color: #da2121;
+  font-weight: bold;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.main_services .child_service .service_contents .service_content h1 {
+  font-size: 20px;
+  margin: 20px 0;
+  font-family: "ubuntu", sans-serif;
+  color: white;
+  text-shadow: -1px 2px 6px rgba(36, 31, 30, 0.81);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.main_services .child_service .service_contents .service_content p {
+  font-family: roboto;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.main_services .child_service .service_contents .service_content:hover {
+  background: #da2121;
+}
+
+.main_services .child_service .service_contents .service_content:hover p i {
+  color: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main_services .child_service .service_contents .service_content:hover h1 {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main_services .child_service .service_contents .service_content:hover p {
+  color: white;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .main_project {
@@ -980,6 +1116,10 @@ main .section_blog a i {
   }
 }
 
+.main_services .child_service .service_contents {
+  padding: 50px;
+}
+
 @media (max-width: 912px) {
   .main_header {
     height: 80vh;
@@ -1183,6 +1323,16 @@ main .section_blog a i {
   .main_about .child_about .about_content .right_content button:hover, .main_project .child_about .about_content .right_content button:hover {
     background: white;
     color: #df1d37;
+  }
+  .main_services {
+    margin-top: 200px;
+    margin-bottom: 470px;
+  }
+  .main_services .child_service .service_contents {
+    padding: 0 25px 0 10px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    place-items: center;
   }
   .main_project {
     margin: 100px 0;
@@ -1480,7 +1630,7 @@ main .section_blog a i {
     bottom: 0px;
   }
   .project_3_main .project_3_section .project_3_right .project_3_right_down a {
-    padding: 4px 8px;
+    padding: 3px 5px;
     font-size: 10px;
   }
   .project_3_main .project_3_section .project_3_right .project_3_right_down a:hover {
