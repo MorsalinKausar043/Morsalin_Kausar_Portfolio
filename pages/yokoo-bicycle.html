@@ -17,21 +17,24 @@
         <section class="project_3_section">
             <div class="project_3_left">
                 <div class="project_3_up">
-                    <img data-aos="fade-right" src="../images/project-img/yokoo-bicycle-first-pic.png" alt="project_img">
+                    <img data-aos="fade-right" id="show_img" src="../images/project-img/yokoo-bicycle-first-pic.png" alt="project_img">
                 </div>
                 <div class="project_3_down">
                     <img 
                     data-aos="fade-right" 
                     src="../images/project-img/yokoo-bicycle-first-pic.png"   
                     alt="project_mini_images"
+                    id="first_img"
                     >
                     <img data-aos="fade-up"
                     src="../images/project-img/yokoo-bicycle-second-pic.png"  
                     alt="project_mini_images"
+                    id="second_img"
                     >
                     <img data-aos="fade-left" 
                     src="../images/project-img/yokoo-bicycle-third-imges.png" 
                     alt="project_mini_images"
+                    id="third_img"
                     >
                 </div>
             </div>
@@ -81,8 +84,21 @@
         </section>
     </main>
 
-    <!-- add js page ---------------  -->
-    <script src="../app.js"></script>
+    <!-- adding javascript --------------------------------------> 
+    <script>
+        const loading = document.getElementById("loading");
+        const first_img = document.getElementById("first_img");
+        const second_img = document.getElementById("second_img");
+        const third_img = document.getElementById("third_img");
+        const show_img = document.getElementById("show_img");
+        first_img.addEventListener("click" , _=> show_img.src ="../images/project-img/yokoo-bicycle-first-pic.png")
+        second_img.addEventListener("click" , _=> show_img.src ="../images/project-img/yokoo-bicycle-second-pic.png")
+        third_img.addEventListener("click" , _=> show_img.src ="../images/project-img/yokoo-bicycle-third-imges.png")
+        
+        // adding loading system ------------------>
+        window.addEventListener("load", _ => loading.style.display = "none");
+
+    </script>
 
       <!-- aos animation  -->
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

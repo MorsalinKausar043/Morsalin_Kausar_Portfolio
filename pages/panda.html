@@ -17,21 +17,24 @@
         <section class="project_3_section">
             <div class="project_3_left">
                 <div class="project_3_up">
-                    <img data-aos="fade-right" src="../images/project-img/panda-3rd-image.png" alt="project_img">
+                    <img data-aos="fade-right" id="show_img" src="../images/project-img/panda-3rd-image.png" alt="project_img">
                 </div>
                 <div class="project_3_down">
-                    <img 
-                    data-aos="fade-right" 
-                    src="../images/project-img/panda-1st-pic.png"   
-                    alt="project_mini_images"
-                    >
-                    <img data-aos="fade-up"
-                    src="../images/project-img/panda-2nd-pic.png"  
-                    alt="project_mini_images"
-                    >
-                    <img data-aos="fade-left" 
+                    <img data-aos="fade-right" 
                     src="../images/project-img/panda-3rd-image.png" 
                     alt="project_mini_images"
+                    id="third_img"
+                    >
+                    <img 
+                    data-aos="fade-up" 
+                    src="../images/project-img/panda-1st-pic.png"   
+                    alt="project_mini_images"
+                    id="first_img"
+                    >
+                    <img data-aos="fade-left"
+                    src="../images/project-img/panda-2nd-pic.png"  
+                    alt="project_mini_images"
+                    id="second_img"
                     >
                 </div>
             </div>
@@ -52,7 +55,7 @@
                 </div>
                 <div class="project_3_right_down">
                     <a 
-                    data-aos="fade-right"
+                        data-aos="fade-right"
                         href="https://bootstrap-nike.netlify.app/#" 
                         target="_blank">
                         Live Website
@@ -64,13 +67,13 @@
                         Client Code
                     </a>
                     <a 
-                    data-aos="fade-left"
+                        data-aos="fade-left"
                         href="https://github.com/MorsalinKausar043/Panda_Website" 
                         target="_blank">
                         BackEnd Code
                     </a>
                     <a 
-                    data-aos="fade-up"
+                        data-aos="fade-up"
                         href="../index.html" 
                         id="cancel_btn">
                         <i class="fas fa-window-close"></i>
@@ -80,8 +83,21 @@
         </section>
     </main>
 
-    <!-- add js page ---------------  -->
-    <script src="../app.js"></script>
+    <!-- adding javascript -------------------------------------->  
+    <script>
+        const loading = document.getElementById("loading");
+        const first_img = document.getElementById("first_img");
+        const second_img = document.getElementById("second_img");
+        const third_img = document.getElementById("third_img");
+        const show_img = document.getElementById("show_img");
+        first_img.addEventListener("click" , _=> show_img.src ="../images/project-img/panda-1st-pic.png")
+        second_img.addEventListener("click" , _=> show_img.src ="../images/project-img/panda-2nd-pic.png")
+        third_img.addEventListener("click" , _=> show_img.src ="../images/project-img/panda-3rd-image.png")
+        
+        // adding loading system ------------------>
+        window.addEventListener("load", _ => loading.style.display = "none");
+
+    </script>
 
       <!-- aos animation  -->
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

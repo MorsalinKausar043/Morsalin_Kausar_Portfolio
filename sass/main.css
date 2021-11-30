@@ -89,7 +89,7 @@ body {
 }
 
 .main_header .child_header #navigation {
-  width: 100%;
+  width: 100vw;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -727,10 +727,11 @@ main .section_blog a i {
 
 .project_3_main {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: -ms-grid;
   display: grid;
   place-items: center;
+  overflow-y: scroll;
 }
 
 .project_3_main .project_3_section {
@@ -1388,11 +1389,11 @@ main .section_blog a i {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 30px;
+    padding: 10px;
     background: rgba(162, 216, 238, 0.1);
   }
   .project_3_main .project_3_section .project_3_left {
-    width: 90%;
+    width: 95%;
     height: 100%;
   }
   .project_3_main .project_3_section .project_3_left .project_3_up {
@@ -1461,28 +1462,15 @@ main .section_blog a i {
   .project_3_main .project_3_section .project_3_right .project_3_right_down {
     width: 100%;
     height: 30%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding-top: 50px;
   }
   .project_3_main .project_3_section .project_3_right .project_3_right_down #cancel_btn {
     position: absolute;
     bottom: 0px;
   }
   .project_3_main .project_3_section .project_3_right .project_3_right_down a {
-    text-decoration: none;
-    background: #da2121;
-    color: white;
-    border: 2px solid #da2121;
-    padding: 8px 10px;
-    border-radius: 5px;
-    -webkit-transition: all .4s linear;
-    transition: all .4s linear;
+    padding: 4px 8px;
+    font-size: 10px;
   }
   .project_3_main .project_3_section .project_3_right .project_3_right_down a:hover {
     background: transparent;

@@ -89,7 +89,7 @@ $ubuntu : 'ubuntu', sans-serif;
         position: relative;
 
         #navigation{
-            width: 100%;
+            width: 100vw;
             height: 100px;
             display: flex;
             justify-content: space-between;
@@ -659,9 +659,10 @@ main{
 
 .project_3_main{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: grid;
     place-items: center;
+    overflow-y: scroll;
 
     .project_3_section{
         width: 90%;
@@ -1380,11 +1381,11 @@ main{
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 30px;
+            padding: 10px;
             background: rgba(162, 216, 238, 0.1);
 
             .project_3_left{
-                width: 90%;
+                width: 95%;
                 height: 100%;
 
                 .project_3_up{
@@ -1460,9 +1461,7 @@ main{
                 .project_3_right_down{
                     width: 100%;
                     height: 30%;
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
+                    padding-top: 50px;
 
                     #cancel_btn{
                         position: absolute;
@@ -1470,13 +1469,8 @@ main{
                     }
 
                     a{
-                        text-decoration: none;
-                        background: rgb(218, 33, 33);
-                        color: white;
-                        border: 2px solid rgb(218, 33, 33);
-                        padding: 8px 10px;
-                        border-radius: 5px;
-                        transition: all .4s linear;
+                        padding: 4px 8px;
+                        font-size: 10px;
 
                         &:hover{
                             background: transparent;
