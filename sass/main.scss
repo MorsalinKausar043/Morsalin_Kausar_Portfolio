@@ -518,6 +518,202 @@ $ubuntu : 'ubuntu', sans-serif;
     }
 }
 
+// skill stie styling --------------------------------------- >
+
+.main_skill{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    display: grid;
+    place-items: center;
+
+    .child_skill{
+
+        .skill_title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: $ubuntu;
+            margin-bottom: 170px;
+
+            h2{
+                font-size: 40px;
+                font-weight: 500;
+                color: black;
+                text-align: center;
+            }
+
+            .about_mini_title{
+                width: 250px;
+                margin: 20px 0 0 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                span:nth-child(1),span:nth-child(3){
+                    width: 40px;
+                    height: 3px;
+                    background: black;
+                    display: block;
+                    border-radius: 10px;
+                }
+
+                span:nth-child(2){
+                    color: rgb(218, 33, 33);
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .sill_contents{
+            width: 100vw;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
+            place-items: center;
+            grid-gap: 20px;
+            margin-top: 50px;
+            padding: 0 100px;
+
+            .skill_content{
+                width: 90%;
+                height: auto;
+
+                h1{
+                    font-family: $ubuntu;
+                    font-size: 25px;
+                    letter-spacing: 2px;
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    font-family: poppins;
+                    margin: 15px 0;
+                }
+
+                a{
+                    text-decoration: none;
+                    padding: 8px 10px;
+                    color: rgb(218, 33, 33);
+                    border: 1px solid rgb(218, 33, 33);
+                    border-radius: 5px;
+                    font-weight: 500;
+                    margin-top: 10px;
+                    display: inline-block;
+                    transition: all .4s linear;
+
+                    &:hover{
+                        background: rgb(218,33,33);
+                        color: white;
+                    }
+                }
+            }
+
+            .skill_bar{
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                .wrapper{
+                    width: 100%;
+                    min-width: auto;
+                    position: absolute;
+                    transform: translate(-50%,-50%);
+                    left: 50%;
+                    top: 50%;
+
+                    .container{
+                        width: 100%;
+                        padding: 30px 30px 50px;
+                        background-color: white;
+                        border: 2px solid rgba(255,255,255,0.06);
+                        border-radius: 10px;
+                        box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+                        backdrop-filter: blur(10px);
+                        font-family: "Poppins",sans-serif;
+                        color: black;
+                        font-weight: 500;
+
+                        h2{
+                            margin-bottom: 20px;
+                            letter-spacing: 2px;
+                            text-align: center;
+                            font-size: 25px;
+                            font-weight: bold;
+                        }
+
+                        .skills:not(:last-child){
+                            margin-bottom: 30px;
+
+                            .details{
+                                width: 100%;
+                                display: flex;  
+                                justify-content: space-between;
+                                margin-bottom: 10px;
+                            }
+
+                            .bar{
+                                position: relative;
+                                border: 2px solid #0d96e0;
+                                border-radius: 20px;
+
+                                div{
+                                    position: relative;
+                                    width: 0;
+                                    height: 9px;
+                                    border-radius: 10px;
+                                    background-color: #0d96e0;
+
+                                    &#html-bar{
+                                        animation: html-fill 2s forwards;
+                                    }
+
+                                    @keyframes html-fill{
+                                        100%{
+                                            width: 65%;
+                                        }
+                                    }
+
+                                    &#css-bar{
+                                        animation: css-fill 2s forwards;
+                                    }
+
+                                    @keyframes css-fill{
+                                        100%{
+                                            width: 62%;
+                                        }
+                                    }
+
+                                    &#js-bar{
+                                        animation: js-fill 2s forwards;
+                                    }
+
+                                    @keyframes js-fill{
+                                        100%{
+                                            width: 60%;
+                                        }
+                                    }
+                                    &#db-bar{
+                                        animation: db-fill 2s forwards;
+                                    }
+
+                                    @keyframes db-fill{
+                                        100%{
+                                            width: 58%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // project site update ---------------------o>
 
 .main_project{
@@ -1303,12 +1499,55 @@ main{
 
 .main_services{
     margin-top: 200px;
-    margin-bottom: 470px;
+    // margin-bottom: 70em;
     .child_service{
         .service_contents{
-            padding: 0 25px 0 10px;
+            // padding: 0 25px 0 10px;
             grid-template-columns: 1fr;
             place-items: center;
+        }
+    }
+}
+
+// sill stie styling --------------------------------------- >
+
+.main_skill{
+    width: 100%;
+    height: 100%;
+    margin-top: 40em;
+    display: grid;
+    place-items: center;
+    margin-bottom: 30em;
+
+    .child_skill{
+
+        .skill_title{
+            margin-bottom: 0px;
+        }
+
+        .sill_contents{
+            width: 100vw;
+            height: auto;
+            grid-template-columns: 1fr;
+            padding: 0 30px;
+
+            .skill_content{
+                width: 90%;
+                height: auto;
+                margin-bottom: 250px;
+
+                h1{
+                    font-family: $ubuntu;
+                    font-size: 25px;
+                    letter-spacing: 2px;
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    font-family: poppins;
+                    margin: 15px 0;
+                }
+            }
         }
     }
 }
@@ -1361,7 +1600,7 @@ main{
         }
     }
 
-    // contact form 
+    // contact form ------------------------------------->
 
     .main_about.main_contact{
         background: white;

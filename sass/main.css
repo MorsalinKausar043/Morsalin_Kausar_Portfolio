@@ -583,6 +583,251 @@ body {
           transform: scale(1);
 }
 
+.main_skill {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.main_skill .child_skill .skill_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "ubuntu", sans-serif;
+  margin-bottom: 170px;
+}
+
+.main_skill .child_skill .skill_title h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+
+.main_skill .child_skill .skill_title .about_mini_title {
+  width: 250px;
+  margin: 20px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_skill .child_skill .skill_title .about_mini_title span:nth-child(1), .main_skill .child_skill .skill_title .about_mini_title span:nth-child(3) {
+  width: 40px;
+  height: 3px;
+  background: black;
+  display: block;
+  border-radius: 10px;
+}
+
+.main_skill .child_skill .skill_title .about_mini_title span:nth-child(2) {
+  color: #da2121;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main_skill .child_skill .sill_contents {
+  width: 100vw;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  grid-gap: 20px;
+  margin-top: 50px;
+  padding: 0 100px;
+}
+
+.main_skill .child_skill .sill_contents .skill_content {
+  width: 90%;
+  height: auto;
+}
+
+.main_skill .child_skill .sill_contents .skill_content h1 {
+  font-family: "ubuntu", sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.main_skill .child_skill .sill_contents .skill_content p {
+  font-family: poppins;
+  margin: 15px 0;
+}
+
+.main_skill .child_skill .sill_contents .skill_content a {
+  text-decoration: none;
+  padding: 8px 10px;
+  color: #da2121;
+  border: 1px solid #da2121;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-top: 10px;
+  display: inline-block;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.main_skill .child_skill .sill_contents .skill_content a:hover {
+  background: #da2121;
+  color: white;
+}
+
+.main_skill .child_skill .sill_contents .skill_bar {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.main_skill .child_skill .sill_contents .skill_bar .wrapper {
+  width: 100%;
+  min-width: auto;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.main_skill .child_skill .sill_contents .skill_bar .wrapper .container {
+  width: 100%;
+  padding: 30px 30px 50px;
+  background-color: white;
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  font-family: "Poppins",sans-serif;
+  color: black;
+  font-weight: 500;
+}
+
+.main_skill .child_skill .sill_contents .skill_bar .wrapper .container h2 {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.main_skill .child_skill .sill_contents .skill_bar .wrapper .container .skills:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.main_skill .child_skill .sill_contents .skill_bar .wrapper .container .skills:not(:last-child) .details {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.main_skill .child_skill .sill_contents .skill_bar .wrapper .container .skills:not(:last-child) .bar {
+  position: relative;
+  border: 2px solid #0d96e0;
+  border-radius: 20px;
+}
+
+.main_skill .child_skill .sill_contents .skill_bar .wrapper .container .skills:not(:last-child) .bar div {
+  position: relative;
+  width: 0;
+  height: 9px;
+  border-radius: 10px;
+  background-color: #0d96e0;
+}
+
+.main_skill .child_skill .sill_contents .skill_bar .wrapper .container .skills:not(:last-child) .bar div#html-bar {
+  -webkit-animation: html-fill 2s forwards;
+          animation: html-fill 2s forwards;
+}
+
+@-webkit-keyframes html-fill {
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes html-fill {
+  100% {
+    width: 65%;
+  }
+}
+
+.main_skill .child_skill .sill_contents .skill_bar .wrapper .container .skills:not(:last-child) .bar div#css-bar {
+  -webkit-animation: css-fill 2s forwards;
+          animation: css-fill 2s forwards;
+}
+
+@-webkit-keyframes css-fill {
+  100% {
+    width: 62%;
+  }
+}
+
+@keyframes css-fill {
+  100% {
+    width: 62%;
+  }
+}
+
+.main_skill .child_skill .sill_contents .skill_bar .wrapper .container .skills:not(:last-child) .bar div#js-bar {
+  -webkit-animation: js-fill 2s forwards;
+          animation: js-fill 2s forwards;
+}
+
+@-webkit-keyframes js-fill {
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes js-fill {
+  100% {
+    width: 60%;
+  }
+}
+
+.main_skill .child_skill .sill_contents .skill_bar .wrapper .container .skills:not(:last-child) .bar div#db-bar {
+  -webkit-animation: db-fill 2s forwards;
+          animation: db-fill 2s forwards;
+}
+
+@-webkit-keyframes db-fill {
+  100% {
+    width: 58%;
+  }
+}
+
+@keyframes db-fill {
+  100% {
+    width: 58%;
+  }
+}
+
 .main_project {
   margin: 50px 0;
 }
@@ -1326,13 +1571,45 @@ main .section_blog a i {
   }
   .main_services {
     margin-top: 200px;
-    margin-bottom: 470px;
   }
   .main_services .child_service .service_contents {
-    padding: 0 25px 0 10px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     place-items: center;
+  }
+  .main_skill {
+    width: 100%;
+    height: 100%;
+    margin-top: 40em;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    margin-bottom: 30em;
+  }
+  .main_skill .child_skill .skill_title {
+    margin-bottom: 0px;
+  }
+  .main_skill .child_skill .sill_contents {
+    width: 100vw;
+    height: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 0 30px;
+  }
+  .main_skill .child_skill .sill_contents .skill_content {
+    width: 90%;
+    height: auto;
+    margin-bottom: 250px;
+  }
+  .main_skill .child_skill .sill_contents .skill_content h1 {
+    font-family: "ubuntu", sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  .main_skill .child_skill .sill_contents .skill_content p {
+    font-family: poppins;
+    margin: 15px 0;
   }
   .main_project {
     margin: 100px 0;
