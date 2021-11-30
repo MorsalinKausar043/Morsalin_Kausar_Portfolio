@@ -39,8 +39,8 @@ $ubuntu : 'ubuntu', sans-serif;
     justify-content: center;
     align-items: center;
     z-index: 10;
-    visibility: hidden;
-    transition: all .4s linear;
+    display: none;
+    transform: 0;
 
     ul{
         font-family: $ubuntu;
@@ -55,16 +55,23 @@ $ubuntu : 'ubuntu', sans-serif;
 
             a{
                 text-decoration: none;
-                border: 1px solid rgb(182, 24, 45);
+                border: 2px solid rgb(182, 24, 45);
                 padding: 8px 10px;
-                color: rgb(218, 33, 33);
+                color: #fff;
+                background: rgb(218, 33, 33);
                 border-radius: 5px;
+                transition: all .4s linear;
+
+                &:hover{
+                    color: rgb(218, 33, 33);
+                    background: transparent;
+                }
             }
         }
     }
 
     &.active{
-        visibility: visible;
+        display: block;
         background: rgb(54, 206, 233);
         position: fixed;
         bottom: 0px;
@@ -939,6 +946,7 @@ main{
 
     // header part start ----------------->
     .main_header{
+        height: 80vh;
     
         .child_header{
     
